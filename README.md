@@ -36,9 +36,9 @@ Users should be able to:
 ### Links
 
 -   Solution URL:
-    [Add solution URL here](https://www.frontendmentor.io/solutions/html5-scsssass-flexboss-SQUWxBVBfq)
+    [Solution](https://www.frontendmentor.io/solutions/html5-scsssass-flexboss-SQUWxBVBfq)
 -   Live Site URL:
-    [Add live site URL here](https://olaoluwavincent.github.io/single-price-grid-component-master/)
+    [Live Preview](https://olaoluwavincent.github.io/single-price-grid-component-master/)
 
 ### Built with
 
