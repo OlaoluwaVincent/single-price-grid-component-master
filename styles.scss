@@ -1,0 +1,146 @@
+:root {
+	--Cyan: hsl(179, 62%, 43%);
+	--Bright-Yellow: hsl(71, 73%, 54%);
+	--Light-Gray: hsl(204, 43%, 93%);
+	--Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	padding: 30px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-family: 'Karla', sans-serif;
+}
+
+h1 {
+	color: var(--Cyan);
+	font-weight: 700;
+}
+
+#section {
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--Grayish-Blue);
+	max-width: 375px;
+	width: 80%;
+	background: white;
+	border-radius: 8px;
+	box-shadow: 0px 5px 20px 0px var(--Grayish-Blue);
+	overflow: hidden;
+
+	.top {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		&__subtitle {
+			color: var(--Bright-Yellow);
+			margin: 8px 0px;
+		}
+		&__lead-paragraph {
+			letter-spacing: normal;
+			line-height: 24px;
+		}
+	}
+	#article {
+		.subscription {
+			padding: 30px;
+			background: var(--Cyan);
+			justify-content: center;
+			color: white;
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+
+			&__title {
+				letter-spacing: normal;
+				font-weight: 700;
+			}
+			&__duration {
+				color: var(--Light-Gray);
+				&-price {
+					opacity: 1;
+					color: white;
+					font-size: 30px;
+				}
+			}
+
+			&__bonus {
+				color: var(--Light-Gray);
+			}
+			&__button {
+				padding: 16px;
+				font-weight: 700;
+				background: var(--Bright-Yellow);
+				color: white;
+				outline: none;
+				border: none;
+				border-radius: 8px;
+				margin-top: 20px;
+				box-shadow: 0px 5px 10px 0px rgba(29, 29, 29, 0.4);
+				cursor: pointer;
+
+				&:active {
+					opacity: 0.8;
+				}
+			}
+		}
+
+		.reasons {
+			padding: 30px;
+			background: lighten($color: hsl(179, 62%, 43%), $amount: 5);
+			color: white;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 8px;
+
+			&__title {
+				letter-spacing: normal;
+				font-weight: 700;
+				margin-bottom: 10px;
+			}
+
+			&__list-items {
+				list-style: none;
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1440px) and (min-width: 768px) {
+	#section {
+		min-width: 700px;
+		.top {
+			padding: 50px;
+			&__lead-paragraph {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+		#article {
+			display: flex;
+			width: 100%;
+
+			.subscription {
+				width: 100%;
+			}
+			.reasons {
+				width: 100%;
+			}
+		}
+	}
+}
